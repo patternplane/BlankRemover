@@ -1,0 +1,40 @@
+﻿<Window x:Class="BlankRemover.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlankRemover"
+        mc:Ignorable="d"
+        Title="BlankRemover" Height="542.391" Width="667.391">
+    <Grid Background="#FFEBFFE9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="360*"/>
+            <RowDefinition Height="22*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="InputTextBox" Grid.Row="1" Grid.Column="1" AcceptsReturn="true" VerticalScrollBarVisibility="auto" HorizontalScrollBarVisibility="auto">
+        </TextBox>
+        <Grid Grid.Row="1" Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120*"/>
+                <RowDefinition Height="140*"/>
+                <RowDefinition Height="120*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="StartButton" Grid.Row="1" Content="엔터&#xd;지우기" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        </Grid>
+
+        <TextBox x:Name="OutputTextBox" Grid.Row="1" Grid.Column="5" AcceptsReturn="true" VerticalScrollBarVisibility="auto" HorizontalScrollBarVisibility="auto">
+        </TextBox>
+    </Grid>
+</Window>
